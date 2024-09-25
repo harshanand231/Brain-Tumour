@@ -88,9 +88,7 @@ def user_login():
 
     return render_template('login.html')
 
-app.config['GOOGLE_CLIENT_ID'] = '245134481160-u6q3g60ui3ukhk5gtr8ggki6ksi0um33.apps.googleusercontent.com'
-app.config['GOOGLE_CLIENT_SECRET'] = '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'
-app.config['GOOGLE_DISCOVERY_URL'] = "https://accounts.google.com/.well-known/openid-configuration"
+# There was the client id which I deleted as this is a public file
 
 oauth = OAuth(app)
 google = oauth.register(
